@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   get 'welcome/index'  
-  resources :coins
+  resources :coins  #Forma de declarar as 7 rotas do crud ---> resources
 
   root to: 'welcome#index'
 
