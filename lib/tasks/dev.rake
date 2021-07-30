@@ -5,8 +5,9 @@ namespace :dev do
       show_spinner("Apagando BD...") {%x(rails db:drop:_unsafe) }      
       show_spinner("Criando Banco de Dados...") { %x(rails db:create) }
       show_spinner("Migrando Banco de Dados") {%x(rails db:migrate) }
-      %x(rails dev:add_coins)  
-      %x(rails dev:add_mining_types) 
+      %x(rails dev:add_mining_types)
+      %x(rails dev:add_coins)
+      
     else
      puts "Voçê não está em ambiente de desenvolvimento"
     end
@@ -22,25 +23,29 @@ namespace :dev do
            {
           description: "Bitcoin",
           acronym: "BTC",
-          url_image: "https://image.flaticon.com/icons/png/512/3342/3342766.png"
+          url_image: "https://image.flaticon.com/icons/png/512/3342/3342766.png",
+          mining_type: MiningType.find_by(acronym: 'PoW')
         },
 
         {
           description: "Ethereum",
           acronym: "ETH",
-          url_image: "https://th.bing.com/th/id/R.e2a12cefdfb666cacd6fde11f6a19104?rik=SeNdhJbSfPQsZw&pid=ImgRaw"
+          url_image: "https://th.bing.com/th/id/R.e2a12cefdfb666cacd6fde11f6a19104?rik=SeNdhJbSfPQsZw&pid=ImgRaw",
+          mining_type: MiningType.all.sample
         },
 
         {
            description: "Dash",
            acronym: "DASH",
-           url_image: "https://i.pinimg.com/originals/99/81/52/99815216c69f59d6bb1322de48a38aae.png"
+           url_image: "https://i.pinimg.com/originals/99/81/52/99815216c69f59d6bb1322de48a38aae.png",
+          mining_type: MiningType.all.sample
         },
 
         {
           description: "DogeCoin",
           acronym: "DGC",
-          url_image: "https://th.bing.com/th/id/OIP.Q2nZOE1TrgBfHantVQQiqwHaHa?pid=ImgDet&rs=1"
+          url_image: "https://th.bing.com/th/id/OIP.Q2nZOE1TrgBfHantVQQiqwHaHa?pid=ImgDet&rs=1",
+          mining_type: MiningType.all.sample
       }
       ]
       coins.each do |coin|
