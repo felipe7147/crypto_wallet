@@ -1,0 +1,7 @@
+pt-BR:
+  hello: "Olá Mundo!"
+  links:
+    edit: "Editar"
+    show: "Mostrar"
+    delete: "Apagar"
+    confirm: "Voçê tem certeza?"
