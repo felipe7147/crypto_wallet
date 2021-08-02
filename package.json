@@ -1,5 +1,13 @@
 {
   "name": "crypto_wallet",
   "private": true,
-  "dependencies": {}
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "notify-js-legacy": "^0.4.1"
+  },
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/felipe7147/crypto_wallet",
+  "author": "Felipe Almeida <felipe_nunesrodrigues@hotmail.com>",
+  "license": "MIT"
 }
