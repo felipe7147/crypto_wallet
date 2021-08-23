@@ -1,0 +1,197 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'yarn' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData yarn
+8 silly fetchNamedPackageData yarn
+9 silly mapToRegistry name yarn
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry uri https://registry.npmjs.org/yarn
+13 verbose request uri https://registry.npmjs.org/yarn
+14 verbose request no auth needed
+15 info attempt registry request try #1 at 1:40:57 PM
+16 verbose request id 0946d9917ef21120
+17 verbose etag W/"5cb4df3a68e012595aa4a255c61b1e06"
+18 verbose lastModified Mon, 26 Jul 2021 17:46:53 GMT
+19 http request GET https://registry.npmjs.org/yarn
+20 http 304 https://registry.npmjs.org/yarn
+21 verbose headers { date: 'Mon, 23 Aug 2021 13:40:58 GMT',
+21 verbose headers   connection: 'keep-alive',
+21 verbose headers   'cf-ray': '6834c1772f2025b4-GIG',
+21 verbose headers   age: '34',
+21 verbose headers   'cache-control': 'public, max-age=300',
+21 verbose headers   etag: '"5cb4df3a68e012595aa4a255c61b1e06"',
+21 verbose headers   'last-modified': 'Mon, 26 Jul 2021 17:46:53 GMT',
+21 verbose headers   vary: 'Accept-Encoding',
+21 verbose headers   'cf-cache-status': 'HIT',
+21 verbose headers   'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+21 verbose headers   'x-amz-replication-status': 'COMPLETED',
+21 verbose headers   server: 'cloudflare' }
+22 silly get cb [ 304,
+22 silly get   { date: 'Mon, 23 Aug 2021 13:40:58 GMT',
+22 silly get     connection: 'keep-alive',
+22 silly get     'cf-ray': '6834c1772f2025b4-GIG',
+22 silly get     age: '34',
+22 silly get     'cache-control': 'public, max-age=300',
+22 silly get     etag: '"5cb4df3a68e012595aa4a255c61b1e06"',
+22 silly get     'last-modified': 'Mon, 26 Jul 2021 17:46:53 GMT',
+22 silly get     vary: 'Accept-Encoding',
+22 silly get     'cf-cache-status': 'HIT',
+22 silly get     'expect-ct': 'max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"',
+22 silly get     'x-amz-replication-status': 'COMPLETED',
+22 silly get     server: 'cloudflare' } ]
+23 verbose etag https://registry.npmjs.org/yarn from cache
+24 verbose get saving yarn to /home/vagrant/.npm/registry.npmjs.org/yarn/.cache.json
+25 silly install normalizeTree
+26 silly loadCurrentTree Finishing
+27 silly loadIdealTree Starting
+28 silly install loadIdealTree
+29 silly cloneCurrentTree Starting
+30 silly install cloneCurrentTreeToIdealTree
+31 silly cloneCurrentTree Finishing
+32 silly loadShrinkwrap Starting
+33 silly install loadShrinkwrap
+34 silly loadShrinkwrap Finishing
+35 silly loadAllDepsIntoIdealTree Starting
+36 silly install loadAllDepsIntoIdealTree
+37 silly resolveWithNewModule yarn@1.22.11 checking installable status
+38 silly cache add args [ 'yarn', null ]
+39 verbose cache add spec yarn
+40 silly cache add parsed spec Result {
+40 silly cache add   raw: 'yarn',
+40 silly cache add   scope: null,
+40 silly cache add   name: 'yarn',
+40 silly cache add   rawSpec: '',
+40 silly cache add   spec: 'latest',
+40 silly cache add   type: 'tag' }
+41 silly addNamed yarn@latest
+42 verbose addNamed "latest" is being treated as a dist-tag for yarn
+43 info addNameTag [ 'yarn', 'latest' ]
+44 silly mapToRegistry name yarn
+45 silly mapToRegistry using default registry
+46 silly mapToRegistry registry https://registry.npmjs.org/
+47 silly mapToRegistry uri https://registry.npmjs.org/yarn
+48 verbose addNameTag registry:https://registry.npmjs.org/yarn not in flight; fetching
+49 verbose get https://registry.npmjs.org/yarn not expired, no request
+50 silly addNameTag next cb for yarn with tag latest
+51 silly addNamed yarn@1.22.11
+52 verbose addNamed "1.22.11" is a plain semver version for yarn
+53 silly cache afterAdd yarn@1.22.11
+54 verbose afterAdd /home/vagrant/.npm/yarn/1.22.11/package/package.json not in flight; writing
+55 verbose afterAdd /home/vagrant/.npm/yarn/1.22.11/package/package.json written
+56 silly loadAllDepsIntoIdealTree Finishing
+57 silly idealTree:prePrune crypto_wallet@1.0.0
+57 silly idealTree:prePrune └── yarn@1.22.11
+58 silly loadIdealTree Finishing
+59 silly currentTree crypto_wallet@1.0.0
+60 silly idealTree crypto_wallet@1.0.0
+60 silly idealTree └── yarn@1.22.11
+61 silly generateActionsToTake Starting
+62 silly install generateActionsToTake
+63 silly generateActionsToTake Finishing
+64 silly diffTrees action count 1
+65 silly diffTrees add yarn@1.22.11
+66 silly decomposeActions action count 8
+67 silly decomposeActions fetch yarn@1.22.11
+68 silly decomposeActions extract yarn@1.22.11
+69 silly decomposeActions test yarn@1.22.11
+70 silly decomposeActions preinstall yarn@1.22.11
+71 silly decomposeActions build yarn@1.22.11
+72 silly decomposeActions install yarn@1.22.11
+73 silly decomposeActions postinstall yarn@1.22.11
+74 silly decomposeActions finalize yarn@1.22.11
+75 silly executeActions Starting
+76 silly install executeActions
+77 silly doSerial global-install 0
+78 silly doParallel fetch 1
+79 verbose makeDirectory /home/vagrant/.npm/_locks creation not in flight; initializing
+80 silly makeDirectory /home/vagrant/.npm/_locks uid: 1000 gid: 1000
+81 verbose lock using /home/vagrant/.npm/_locks/staging-175145f1e69fe567.lock for /vagrant/crypto_wallet/node_modules/.staging
+82 silly doParallel extract 1
+83 silly extract yarn@1.22.11
+84 verbose unbuild node_modules/.staging/yarn-88b946ec
+85 silly gentlyRm /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec is being purged from base /vagrant/crypto_wallet
+86 verbose gentlyRm don't care about contents; nuking /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec
+87 verbose tar unpack /home/vagrant/.npm/yarn/1.22.11/package.tgz
+88 verbose tar unpacking to /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec
+89 silly gentlyRm /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec is being purged
+90 verbose gentlyRm don't care about contents; nuking /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec
+91 silly gunzTarPerm modes [ '775', '664' ]
+92 silly gunzTarPerm extractEntry LICENSE
+93 silly gunzTarPerm modified mode [ 'LICENSE', 420, 436 ]
+94 silly gunzTarPerm extractEntry README.md
+95 silly gunzTarPerm modified mode [ 'README.md', 420, 436 ]
+96 silly gunzTarPerm extractEntry bin/
+97 silly gunzTarPerm modified mode [ 'bin/', 493, 509 ]
+98 silly gunzTarPerm extractEntry bin/yarn.js
+99 silly gunzTarPerm modified mode [ 'bin/yarn.js', 493, 509 ]
+100 silly gunzTarPerm extractEntry bin/yarn
+101 silly gunzTarPerm modified mode [ 'bin/yarn', 493, 509 ]
+102 silly gunzTarPerm extractEntry bin/yarnpkg
+103 silly gunzTarPerm modified mode [ 'bin/yarnpkg', 493, 509 ]
+104 silly gunzTarPerm extractEntry bin/yarn.cmd
+105 silly gunzTarPerm modified mode [ 'bin/yarn.cmd', 493, 509 ]
+106 silly gunzTarPerm extractEntry bin/yarnpkg.cmd
+107 silly gunzTarPerm modified mode [ 'bin/yarnpkg.cmd', 493, 509 ]
+108 silly gunzTarPerm extractEntry lib/
+109 silly gunzTarPerm modified mode [ 'lib/', 493, 509 ]
+110 silly gunzTarPerm extractEntry lib/cli.js
+111 silly gunzTarPerm modified mode [ 'lib/cli.js', 493, 509 ]
+112 silly gunzTarPerm extractEntry lib/v8-compile-cache.js
+113 silly gunzTarPerm modified mode [ 'lib/v8-compile-cache.js', 420, 436 ]
+114 silly gunzTarPerm extractEntry package.json
+115 silly gunzTarPerm modified mode [ 'package.json', 420, 436 ]
+116 silly gunzTarPerm extractEntry preinstall.js
+117 silly gunzTarPerm modified mode [ 'preinstall.js', 420, 436 ]
+118 silly gentlyRm /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec/node_modules is being purged
+119 verbose gentlyRm don't care about contents; nuking /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec/node_modules
+120 silly doParallel preinstall 1
+121 silly preinstall yarn@1.22.11 /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec
+122 info lifecycle yarn@1.22.11~preinstall: yarn@1.22.11
+123 verbose lifecycle yarn@1.22.11~preinstall: unsafe-perm in lifecycle true
+124 verbose lifecycle yarn@1.22.11~preinstall: PATH: /usr/share/npm/bin/node-gyp-bin:/vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec/node_modules/.bin:/vagrant/crypto_wallet/node_modules/.bin:/home/vagrant/.rvm/gems/ruby-2.6.7/bin:/home/vagrant/.rvm/gems/ruby-2.6.7@global/bin:/home/vagrant/.rvm/rubies/ruby-2.6.7/bin:/home/vagrant/.rvm/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin
+125 verbose lifecycle yarn@1.22.11~preinstall: CWD: /vagrant/crypto_wallet/node_modules/.staging/yarn-88b946ec
+126 silly lifecycle yarn@1.22.11~preinstall: Args: [ '-c', ':; (node ./preinstall.js > /dev/null 2>&1 || true)' ]
+127 silly lifecycle yarn@1.22.11~preinstall: Returned: code: 0  signal: null
+128 silly doReverseSerial remove 0
+129 silly doSerial move 0
+130 silly doSerial finalize 1
+131 silly finalize /vagrant/crypto_wallet/node_modules/yarn
+132 silly doSerial build 1
+133 silly build yarn@1.22.11
+134 info linkStuff yarn@1.22.11
+135 silly linkStuff yarn@1.22.11 has /vagrant/crypto_wallet/node_modules as its parent node_modules
+136 warn prefer global yarn@1.22.11 should be installed with -g
+137 verbose linkBins yarn@1.22.11
+138 verbose link bins [ { yarn: './bin/yarn.js', yarnpkg: './bin/yarn.js' },
+138 verbose link bins   '/vagrant/crypto_wallet/node_modules/.bin',
+138 verbose link bins   false ]
+139 verbose linkMans yarn@1.22.11
+140 silly gentlyRm /vagrant/crypto_wallet/node_modules/.bin/yarnpkg is being purged
+141 verbose gentlyRm don't care about contents; nuking /vagrant/crypto_wallet/node_modules/.bin/yarnpkg
+142 silly gentlyRm /vagrant/crypto_wallet/node_modules/.bin/yarn is being purged
+143 verbose gentlyRm don't care about contents; nuking /vagrant/crypto_wallet/node_modules/.bin/yarn
+144 verbose unlock done using /home/vagrant/.npm/_locks/staging-175145f1e69fe567.lock for /vagrant/crypto_wallet/node_modules/.staging
+145 silly rollbackFailedOptional Starting
+146 silly rollbackFailedOptional Finishing
+147 silly runTopLevelLifecycles Starting
+148 silly runTopLevelLifecycles Finishing
+149 silly install printInstalled
+150 verbose stack Error: EPROTO: protocol error, symlink '../yarn/bin/yarn.js' -> '/vagrant/crypto_wallet/node_modules/.bin/yarnpkg'
+151 verbose cwd /vagrant/crypto_wallet
+152 error Linux 4.15.0-136-generic
+153 error argv "/usr/bin/node" "/usr/bin/npm" "install" "yarn"
+154 error node v8.10.0
+155 error npm  v3.5.2
+156 error path ../yarn/bin/yarn.js
+157 error code EPROTO
+158 error errno -71
+159 error syscall symlink
+160 error EPROTO: protocol error, symlink '../yarn/bin/yarn.js' -> '/vagrant/crypto_wallet/node_modules/.bin/yarnpkg'
+161 error If you need help, you may report this error at:
+161 error     <https://github.com/npm/npm/issues>
+162 verbose exit [ -71, true ]
